@@ -1,0 +1,75 @@
+/* ==========================================
+   VARIABLES GLOBALES Y RUTAS DE IMÁGENES
+   ========================================== */
+:root {
+  /* Cambia aquí la ruta de tu imagen de fondo principal */
+  --bg-image: url('assets/img/background.jpg');
+  --color-primary: #1a1a1a;
+  --color-text: #333333;
+}
+
+/* ==========================================
+   ESTILOS GENERALES
+   ========================================== */
+body {
+  font-family: 'Raleway', sans-serif;
+  color: var(--color-text);
+  /* Configuración del fondo fijo para toda la web */
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================
+   EFECTO DE TRANSPARENCIA (GLASSMORPHISM)
+   ========================================== */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85); /* Fondo blanco con 85% de opacidad */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque del fondo */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* ==========================================
+   ESTILOS DE NAVEGACIÓN Y TEXTOS
+   ========================================== */
+.navbar-glass {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer-glass {
+  background: rgba(255, 255, 255, 0.95);
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.btn-custom {
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #0b5ed7;
+  color: white;
+  transform: translateY(-2px);
+}
