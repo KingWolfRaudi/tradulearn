@@ -95,17 +95,27 @@ body {
 }
 
 .btn-custom {
-  background-color: #0d6efd;
-  color: white;
-  border-radius: 50px;
-  padding: 10px 25px;
-  transition: all 0.3s ease;
+    background-color: var(--brand-green-glass); /* El verde con transparencia que ya definimos */
+    color: white !important;
+    border-radius: 50px;
+    padding: 8px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .btn-custom:hover {
-  background-color: #0b5ed7;
-  color: white;
-  transform: translateY(-2px);
+    background-color: var(--brand-green) !important; /* Verde sólido al pasar el mouse */
+    transform: translateY(-3px); /* Pequeño salto hacia arriba */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    color: white !important;
+}
+
+/* Esto asegura que las imágenes dentro de los botones se vean bien */
+.btn-custom img {
+    object-fit: contain;
+    /* Si tus logos son oscuros y quieres que se vean blancos, activa esta línea: */
+    /* filter: brightness(0) invert(1); */
 }
 /* ==========================================
    TAMAÑO DE LETRA Y LECTURA
