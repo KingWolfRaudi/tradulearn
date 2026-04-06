@@ -1,27 +1,61 @@
 /* ==========================================
    VARIABLES GLOBALES Y RUTAS DE IMÁGENES
    ========================================== */
+/*
 :root {
-  /* Cambia aquí la ruta de tu imagen de fondo principal */
-  --bg-image: url('assets/img/background.jpg');
+  --bg-image: url('../assets/img/background.jpg');
   --color-primary: #1a1a1a;
   --color-text: #333333;
+  /*
+  /* Nuevas variables para Nav y Footer */
+  /*--nav-footer-bg: #0D7E51D9; 
+}
+*/
+
+:root {
+  --brand-green-glass: #0D7E51D9; /* Verde Tradulearn con transparencia */
+  --bg-image: url('assets/img/bg.jpg'); 
+}
+
+/* Navbar y Footer con el verde aplicado */
+.navbar-glass, .footer-glass {
+  background-color: var(--brand-green-glass) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Ajuste de color de texto para que se vea bien sobre el verde */
+.navbar-glass .nav-link, 
+.navbar-glass .navbar-brand,
+.footer-glass h3,
+.footer-glass p {
+  color: #ffffff !important;
+}
+
+/* Para que el botón de menú móvil (hamburguesa) se vea blanco */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+.navbar-toggler-icon {
+  filter: invert(1); /* Convierte el icono negro en blanco */
 }
 
 /* ==========================================
    ESTILOS GENERALES
    ========================================== */
 body {
-  font-family: 'Raleway', sans-serif;
-  color: var(--color-text);
-  /* Configuración del fondo fijo para toda la web */
-  background-image: var(--bg-image);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  /* Aplicamos el fondo con estas propiedades para asegurar visibilidad */
+  background-image: var(--bg-image) !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  /* Color de respaldo por si la imagen falla */
+  background-color: #f4f4f4; 
 }
 
 /* ==========================================
