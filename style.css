@@ -73,3 +73,14 @@ body {
   color: white;
   transform: translateY(-2px);
 }
+/* ==========================================
+   TAMAÑO DE LETRA Y LECTURA
+   ========================================== */
+p, li, .accordion-body {
+  font-size: 1.3rem; /* Aumenta el tamaño de la letra (aprox 18px) */
+  line-height: 1.7;   /* Da más espacio entre las líneas para que no se vea amontonado */
+}
+
+.accordion-button {
+  font-size: 1.2rem; /* Aumenta un poquito la letra de las preguntas frecuentes */
+}
