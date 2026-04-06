@@ -118,3 +118,27 @@ p, li, .accordion-body {
 .accordion-button {
   font-size: 1.2rem; /* Aumenta un poquito la letra de las preguntas frecuentes */
 }
+
+/* ==========================================
+   EFECTO HOVER EN NAVBAR
+   ========================================== */
+
+/* Estado inicial de los links */
+.navbar-glass .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important; /* Un blanco con algo de transparencia */
+    transition: all 0.3s ease-in-out; /* Suaviza el cambio de color y brillo */
+    font-weight: 500;
+}
+
+/* Efecto al pasar el mouse (Hover) */
+.navbar-glass .nav-link:hover {
+    color: #ffffff !important; /* Blanco puro al iluminarse */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Efecto de resplandor sutil */
+    transform: translateY(-1px); /* Un pequeño movimiento hacia arriba */
+}
+
+/* Estilo para el link de la sección donde te encuentras (Active) */
+.navbar-glass .nav-link.active {
+    color: #ffffff !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
