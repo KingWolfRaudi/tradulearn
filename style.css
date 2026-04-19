@@ -5,7 +5,7 @@
   --brand-green: #0D7E51;
   --brand-green-glass: #0D7E51D9; /* Verde con transparencia */
   /* Ajusta el nombre a bg.png o bg1.jpg según lo que tengas en assets/img */
-  --bg-image: url('assets/img/bg.png'); 
+  --bg-image: url('assets/img/bg.jpg'); 
   --color-text-dark: #333333;
 }
 
