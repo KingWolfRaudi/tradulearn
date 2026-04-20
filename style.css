@@ -110,6 +110,18 @@ body {
     object-fit: contain;
 }
 
+/* Variante para el botón de Stripe */
+.btn-stripe {
+    color: #1a1a1a !important; /* Color negro/gris muy oscuro */
+    background-color: rgba(255, 255, 255, 0.4); /* Le damos un fondo un poquito más blanco para que resalte el logo */
+    font-weight: bold;
+}
+
+.btn-stripe:hover {
+    color: #000000 !important; /* Negro puro al pasar el ratón */
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 /* ==========================================
    TIPOGRAFÍA Y SECCIONES
    ========================================== */
