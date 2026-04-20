@@ -183,4 +183,36 @@ p, li, .accordion-body {
   color: var(--color-text-dark);
   margin-bottom: 0;
   line-height: 1.6;
+  
+  /* ¡La magia para los correos largos! */
+  overflow-wrap: break-word; 
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+/* ==========================================
+   AJUSTES RESPONSIVOS (MÓVILES)
+   ========================================== */
+@media (max-width: 768px) {
+  /* Reducimos el tamaño de la letra de las preguntas y respuestas en celulares */
+  .faq-question {
+    font-size: 1.15rem; 
+  }
+  
+  .faq-answer {
+    font-size: 1rem; 
+  }
+
+  /* Hacemos el círculo del icono un poquitito más pequeño para ganar espacio */
+  .faq-icon-circle {
+    width: 65px;
+    height: 65px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Ajuste para que la tarjeta no tenga tanto espacio vacío a los lados en móviles */
+  .faq-card-vertical {
+    padding: 1.5rem 1rem; 
+  }
 }
