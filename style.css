@@ -142,32 +142,38 @@ p, li, .accordion-body {
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 15px;
   padding: 2.5rem 1.5rem;
-  text-align: center; /* Centramos todo el texto e iconos */
+  text-align: center; 
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  
+  /* NUEVO: Forzamos a que la tarjeta no crezca de más */
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; 
 }
 
 .faq-card-vertical:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.8); /* Se vuelve un poco menos transparente al pasar el mouse */
+  background: rgba(255, 255, 255, 0.8); 
 }
 
 /* Icono redondo en la parte superior */
 .faq-icon-circle {
-  background: rgba(13, 126, 81, 0.15); /* Verde clarito */
+  background: rgba(13, 126, 81, 0.15); 
   color: var(--brand-green);
   font-size: 2.5rem;
   width: 80px;
   height: 80px;
-  border-radius: 50%; /* Hace el contenedor completamente redondo */
+  border-radius: 50%; 
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
   border: 1px solid rgba(13, 126, 81, 0.2);
+  flex-shrink: 0; /* Evita que el círculo se aplaste */
 }
 
 .faq-question {
@@ -176,6 +182,7 @@ p, li, .accordion-body {
   font-size: 1.3rem;
   color: var(--brand-green);
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .faq-answer {
@@ -184,26 +191,26 @@ p, li, .accordion-body {
   margin-bottom: 0;
   line-height: 1.6;
   
-  /* ¡La magia para los correos largos! */
-  overflow-wrap: break-word; 
-  word-wrap: break-word;
-  word-break: break-word;
+  /* NUEVO: Contención estricta para correos largos */
+  width: 100%; 
+  word-break: break-word; /* Rompe palabras largas amigablemente */
+  overflow-wrap: anywhere; /* Se asegura de romper el correo en móviles */
 }
 
 /* ==========================================
    AJUSTES RESPONSIVOS (MÓVILES)
    ========================================== */
 @media (max-width: 768px) {
-  /* Reducimos el tamaño de la letra de las preguntas y respuestas en celulares */
   .faq-question {
     font-size: 1.15rem; 
   }
   
   .faq-answer {
-    font-size: 1rem; 
+    font-size: 1rem;
+    /* En pantallas muy pequeñas, forzamos la ruptura extrema */
+    word-break: break-all; 
   }
 
-  /* Hacemos el círculo del icono un poquitito más pequeño para ganar espacio */
   .faq-icon-circle {
     width: 65px;
     height: 65px;
@@ -211,7 +218,6 @@ p, li, .accordion-body {
     margin-bottom: 1rem;
   }
   
-  /* Ajuste para que la tarjeta no tenga tanto espacio vacío a los lados en móviles */
   .faq-card-vertical {
     padding: 1.5rem 1rem; 
   }
