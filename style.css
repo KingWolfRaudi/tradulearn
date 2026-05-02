@@ -250,6 +250,21 @@ li,
 
 
 /* ========================================== */
+/* Pantalla de carga unicolor */
+#load-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10000; /* Por encima de todo */
+  background-color: #ffffff; /* Fondo sólido blanco */
+  transition: opacity 0.8s ease-in-out, visibility 0.8s;
+}
+
+#load-overlay.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
 /* Animaciones de apertura */
 @keyframes open-left-window {
   from {
