@@ -1,0 +1,19 @@
+[thanos-effect] {
+    height: 100vh;
+    width: 100vw;
+
+    position: absolute;
+    text-align: center;
+    pointer-events: none;
+}
+
+    [thanos-effect] canvas {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+    }
+
+    [thanos-effect].border canvas {
+        box-shadow: 0 0 0 1px red;
+    }

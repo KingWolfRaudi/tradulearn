@@ -3,9 +3,10 @@
    ========================================== */
 :root {
   --brand-green: #0D7E51;
-  --brand-green-glass: #0D7E51D9; /* Verde con transparencia */
+  --brand-green-glass: #0D7E51D9;
+  /* Verde con transparencia */
   /* Ajusta el nombre a bg.png o bg1.jpg según lo que tengas en assets/img */
-  --bg-image: url('assets/img/bg.jpg'); 
+  --bg-image: url('assets/img/bg.jpg');
   --color-text-dark: #333333;
 }
 
@@ -22,7 +23,7 @@ body {
   background-position: center center !important;
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
-  background-color: #f4f4f4; 
+  background-color: #f4f4f4;
 }
 
 /* ==========================================
@@ -35,14 +36,16 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 20px; /* Un poco más redondeado para modernidad */
+  border-radius: 20px;
+  /* Un poco más redondeado para modernidad */
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
   padding: 2.5rem;
   margin-bottom: 2rem;
 }
 
 /* Navbar y Footer Verdes */
-.navbar-glass, .footer-glass {
+.navbar-glass,
+.footer-glass {
   background-color: var(--brand-green-glass) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
@@ -50,7 +53,7 @@ body {
 }
 
 /* Forzar texto blanco en Nav y Footer */
-.navbar-glass .nav-link, 
+.navbar-glass .nav-link,
 .navbar-glass .navbar-brand,
 .footer-glass h3,
 .footer-glass p,
@@ -63,25 +66,26 @@ body {
    ========================================== */
 
 .navbar-glass .nav-link {
-    transition: all 0.3s ease-in-out;
-    font-weight: 500;
-    text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .navbar-glass .nav-link:hover {
-    color: #ffffff !important;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    transform: translateY(-1px);
+  color: #ffffff !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
 }
 
 .navbar-glass .nav-link.active {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 /* Hamburguesa móvil blanca */
 .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.5) !important;
 }
+
 .navbar-toggler-icon {
   filter: invert(1);
 }
@@ -91,35 +95,39 @@ body {
    ========================================== */
 
 .btn-custom {
-    background-color: rgba(255, 255, 255, 0.15); /* Fondo sutil para botones en footer verde */
-    color: white !important;
-    border-radius: 50px;
-    padding: 10px 25px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    transition: all 0.3s ease;
-    text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  /* Fondo sutil para botones en footer verde */
+  color: white !important;
+  border-radius: 50px;
+  padding: 10px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .btn-custom:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-custom img {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 /* Variante para el botón de Stripe */
 .btn-stripe {
-    color: #1a1a1a !important; /* Color negro/gris muy oscuro */
-    background-color: rgba(255, 255, 255, 0.4); /* Le damos un fondo un poquito más blanco para que resalte el logo */
-    font-weight: bold;
+  color: #1a1a1a !important;
+  /* Color negro/gris muy oscuro */
+  background-color: rgba(255, 255, 255, 0.4);
+  /* Le damos un fondo un poquito más blanco para que resalte el logo */
+  font-weight: bold;
 }
 
 .btn-stripe:hover {
-    color: #000000 !important; /* Negro puro al pasar el ratón */
-    background-color: rgba(255, 255, 255, 0.7);
+  color: #000000 !important;
+  /* Negro puro al pasar el ratón */
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 /* ==========================================
@@ -135,8 +143,10 @@ body {
   letter-spacing: 2px;
 }
 
-p, li, .accordion-body {
-  font-size: 1.3rem; 
+p,
+li,
+.accordion-body {
+  font-size: 1.3rem;
   line-height: 1.7;
   color: var(--color-text-dark);
 }
@@ -150,42 +160,43 @@ p, li, .accordion-body {
    ========================================== */
 
 .faq-card-vertical {
-  background: rgba(255, 255, 255, 0.6); 
+  background: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 15px;
   padding: 2.5rem 1.5rem;
-  text-align: center; 
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-  
+
   /* NUEVO: Forzamos a que la tarjeta no crezca de más */
   width: 100%;
   max-width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .faq-card-vertical:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.8); 
+  background: rgba(255, 255, 255, 0.8);
 }
 
 /* Icono redondo en la parte superior */
 .faq-icon-circle {
-  background: rgba(13, 126, 81, 0.15); 
+  background: rgba(13, 126, 81, 0.15);
   color: var(--brand-green);
   font-size: 2.5rem;
   width: 80px;
   height: 80px;
-  border-radius: 50%; 
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
   border: 1px solid rgba(13, 126, 81, 0.2);
-  flex-shrink: 0; /* Evita que el círculo se aplaste */
+  flex-shrink: 0;
+  /* Evita que el círculo se aplaste */
 }
 
 .faq-question {
@@ -202,11 +213,13 @@ p, li, .accordion-body {
   color: var(--color-text-dark);
   margin-bottom: 0;
   line-height: 1.6;
-  
+
   /* NUEVO: Contención estricta para correos largos */
-  width: 100%; 
-  word-break: break-word; /* Rompe palabras largas amigablemente */
-  overflow-wrap: anywhere; /* Se asegura de romper el correo en móviles */
+  width: 100%;
+  word-break: break-word;
+  /* Rompe palabras largas amigablemente */
+  overflow-wrap: anywhere;
+  /* Se asegura de romper el correo en móviles */
 }
 
 /* ==========================================
@@ -214,13 +227,13 @@ p, li, .accordion-body {
    ========================================== */
 @media (max-width: 768px) {
   .faq-question {
-    font-size: 1.15rem; 
+    font-size: 1.15rem;
   }
-  
+
   .faq-answer {
     font-size: 1rem;
     /* En pantallas muy pequeñas, forzamos la ruptura extrema */
-    word-break: break-all; 
+    word-break: break-all;
   }
 
   .faq-icon-circle {
@@ -229,8 +242,110 @@ p, li, .accordion-body {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-  
+
   .faq-card-vertical {
-    padding: 1.5rem 1rem; 
+    padding: 1.5rem 1rem;
   }
+}
+
+
+/* ========================================== */
+/* Animaciones de apertura */
+@keyframes open-left-window {
+  from {
+    transform: translateX(0);
+    background-position: 99.5% 50%, 99.5% 50%, 100% 50%;
+  }
+
+  to {
+    transform: translateX(-50vw);
+    background-position: 99.5% 50%, 99.5% 50%, calc(100% + 50vw) 50%;
+  }
+}
+
+@keyframes open-right-window {
+  from {
+    transform: translateX(0);
+    background-position: 0.5% 50%, 0.5% 50%, 0% 50%;
+  }
+
+  to {
+    transform: translateX(+50vw);
+    background-position: 0.5% 50%, 0.5% 50%, calc(0% - 50vw) 50%;
+  }
+}
+
+#start-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9998;
+  overflow: hidden;
+  display: flex;
+}
+
+#start-overlay.open {
+  visibility: hidden;
+}
+
+#start-overlay .open-button {
+  position: absolute;
+  height: 25vmin;
+  width: 25vmin;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background: radial-gradient(#ffffff, #e2e2e2);
+  z-index: 9999;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#start-overlay .open-button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+#start-overlay.open .open-button {
+  display: none;
+}
+
+#start-overlay .window {
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transition: visibility 2s;
+}
+
+#start-overlay .left {
+  background: url(./img/tree_left_screen.jpg), url(./img/tree_left_multiply.jpg), url(./img/bg_left_blur.jpg);
+  background-position: 99.5% 50%, 99.5% 50%, 100% 50%;
+  background-size: cover;
+  background-blend-mode: screen, multiply, normal;
+}
+
+#start-overlay.open .left {
+  animation-name: open-left-window;
+}
+
+#start-overlay .right {
+  background: url(./img/tree_right_screen.jpg), url(./img/tree_right_multiply.jpg), url(./img/bg_right_blur.jpg);
+  background-position: 0.5% 50%, 0.5% 50%, 0% 50%;
+  background-size: cover;
+  background-blend-mode: screen, multiply, normal;
+}
+
+#start-overlay.open .right {
+  animation-name: open-right-window;
 }

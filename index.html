@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>TRADULEARN | Gisela Galviz Millan</title>
     <link rel="icon" type="image/x-icon" href="assets/favico.ico" />
-    
+
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet" />
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="thanos.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
 </head>
+
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
 
+    <div id="start-overlay">
+        <button class="open-button" onclick="openStartOverlay()">
+            <img src="assets/img/logo.png" alt="Tradulearn" style="width: 80%; height: 80%; object-fit: contain;">
+        </button>
+        <div class="window left"></div>
+        <div class="window right"></div>
+    </div>
+
+    <div thanos-effect></div>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-glass" id="mainNav">
         <div class="container">
             <a class="navbar-brand fw-bold d-flex align-items-center" href="#inicio">
-                <img src="assets/img/logo.png" alt="Logo Tradulearn" width="45" height="45" class="me-2 d-inline-block align-text-top" style="object-fit: contain;">
+                <img src="assets/img/logo.png" alt="Logo Tradulearn" width="45" height="45"
+                    class="me-2 d-inline-block align-text-top" style="object-fit: contain;">
                 TRADULEARN
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -41,9 +55,11 @@
             <div class="col-lg-12 mx-auto">
                 <div class="row align-items-center mb-5 glass-card text-center">
                     <div class="col-12">
-                        <img src="assets/img/logo.png" alt="Logo Tradulearn" width="120" class="img-fluid mx-auto d-block mb-4">
+                        <img src="assets/img/logo.png" alt="Logo Tradulearn" width="120"
+                            class="img-fluid mx-auto d-block mb-4" thanos-dissolve>
                         <h1 class="display-4 fw-bold text-success mb-3">Welcome to TRADULEARN</h1>
-                        <p class="lead fs-3 text-dark">La mejor enseñanza especializada del idioma inglés y de estrategias de traducción para estudiantes hispanohablantes.</p>
+                        <p class="lead fs-3 text-dark">La mejor enseñanza especializada del idioma inglés y de
+                            estrategias de traducción para estudiantes hispanohablantes.</p>
                     </div>
                 </div>
             </div>
@@ -53,33 +69,52 @@
             <div class="col-lg-12 mx-auto">
                 <div class="glass-card">
                     <h2 class="section-title text-center">¿Qué puedo ofrecerte?</h2>
-                    <p class="fs-5 text-center">Aprender a expresarte correctamente en inglés de forma oral y escrita; y si ya posees un buen dominio del idioma inglés, puedes aprender a traducir textos del inglés al español y viceversa. La Inteligencia Artificial no es perfecta y con frecuencia comete errores de traducción.</p>
-                    
+                    <p class="fs-5 text-center">Aprender a expresarte correctamente en inglés de forma oral y escrita; y
+                        si ya posees un buen dominio del idioma inglés, puedes aprender a traducir textos del inglés al
+                        español y viceversa. La Inteligencia Artificial no es perfecta y con frecuencia comete errores
+                        de traducción.</p>
+
                     <hr class="my-4">
-                    
+
                     <div class="row g-4 mt-2">
                         <div class="col-md-6">
-                            <img src="assets/img/gramatica.jpg" alt="Gramática" class="img-fluid rounded mb-3 d-none d-md-block" style="height: 400px; width: 100%; object-fit: cover;">
+                            <img src="assets/img/gramatica.jpg" alt="Gramática"
+                                class="img-fluid rounded mb-3 d-none d-md-block"
+                                style="height: 400px; width: 100%; object-fit: cover;">
                             <h4>✏️<strong>Gramática clara y concisa</strong></h4>
-                            <p>Recibirás explicaciones detalladas y precisas en tu idioma (en español) para que puedas entender la estructura gramatical y el estilo del idioma inglés sin errores o confusiones.</p>
+                            <p>Recibirás explicaciones detalladas y precisas en tu idioma (en español) para que puedas
+                                entender la estructura gramatical y el estilo del idioma inglés sin errores o
+                                confusiones.</p>
                         </div>
 
                         <div class="col-md-6">
-                            <img src="assets/img/home.jpg" alt="Vocabulario" class="img-fluid rounded mb-3 d-none d-md-block" style="height: 400px; width: 100%; object-fit: cover;">
+                            <img src="assets/img/home.jpg" alt="Vocabulario"
+                                class="img-fluid rounded mb-3 d-none d-md-block"
+                                style="height: 400px; width: 100%; object-fit: cover;">
                             <h4>🗣️<strong>Vocabulario</strong></h4>
-                            <p>Mediante el estudio de textos, aprenderás vocabulario clave que te ayudará a expandir tus capacidades lingüísticas de forma sencilla y eficiente.</p>
+                            <p>Mediante el estudio de textos, aprenderás vocabulario clave que te ayudará a expandir tus
+                                capacidades lingüísticas de forma sencilla y eficiente.</p>
                         </div>
 
                         <div class="col-md-6">
-                            <img src="assets/img/desarrollo.jpg" alt="Desarrollo Práctico" class="img-fluid rounded mb-3 d-none d-md-block" style="height: 400px; width: 100%; object-fit: cover;">
+                            <img src="assets/img/desarrollo.jpg" alt="Desarrollo Práctico"
+                                class="img-fluid rounded mb-3 d-none d-md-block"
+                                style="height: 400px; width: 100%; object-fit: cover;">
                             <h4>⚙️<strong>Desarrollo Práctico</strong></h4>
-                            <p>Podrás comunicarte efectivamente analizando el contexto cultural de los textos que estudiaremos y tendrás prácticas conversacionales y auditivas (prácticas fonéticas) de cada texto, incluyendo prácticas en el area profesional de tu preferencia.</p>
+                            <p>Podrás comunicarte efectivamente analizando el contexto cultural de los textos que
+                                estudiaremos y tendrás prácticas conversacionales y auditivas (prácticas fonéticas) de
+                                cada texto, incluyendo prácticas en el area profesional de tu preferencia.</p>
                         </div>
 
                         <div class="col-md-6">
-                            <img src="assets/img/traductores.jpg" alt="Traductores" class="img-fluid rounded mb-3 d-none d-md-block" style="height: 400px; width: 100%; object-fit: cover;">
+                            <img src="assets/img/traductores.jpg" alt="Traductores"
+                                class="img-fluid rounded mb-3 d-none d-md-block"
+                                style="height: 400px; width: 100%; object-fit: cover;">
                             <h4>🌍<strong>Para futuros traductores</strong></h4>
-                            <p>Realizaremos prácticas de traducción con diversos textos especializados, como por ejemplo: textos de finanzas, negocios, académicos, etc. Adicionalmente, podrás mejorar tu expresión y coherencia al escribir, tanto en inglés como en español, lo que te permitirá trabajar en la profesión de forma independiente.</p>
+                            <p>Realizaremos prácticas de traducción con diversos textos especializados, como por
+                                ejemplo: textos de finanzas, negocios, académicos, etc. Adicionalmente, podrás mejorar
+                                tu expresión y coherencia al escribir, tanto en inglés como en español, lo que te
+                                permitirá trabajar en la profesión de forma independiente.</p>
                         </div>
                     </div>
                 </div>
@@ -91,18 +126,23 @@
         <div class="row">
             <div class="col-lg-12 mx-auto">
                 <div class="glass-card">
-                    <h2 class="section-title text-center mb-4">Conóceme: Gisela  Galviz Millan</h2>
-                    <p class="lead text-center mb-5">Profesional bilingüe con más de 20 años de trayectoria ofreciendo servicios en las áreas de interpretación, traducción de textos y enseñanza de los idiomas inglés y español dentro del ámbito médico, educativo, corporativo y jurídico.</p>
-                    
+                    <h2 class="section-title text-center mb-4">Conóceme: Gisela Galviz Millan</h2>
+                    <p class="lead text-center mb-5">Profesional bilingüe con más de 20 años de trayectoria ofreciendo
+                        servicios en las áreas de interpretación, traducción de textos y enseñanza de los idiomas inglés
+                        y español dentro del ámbito médico, educativo, corporativo y jurídico.</p>
+
                     <div class="row g-4">
                         <div class="col-md-6">
                             <br>
                             <h5><strong>Filosofía educativa</strong></h5>
-                            <p>Me encanta enseñar idiomas como herramienta de conexión cultural, porque valoro la calidad sobre la cantidad y adapto cada clase al ritmo de aprendizaje de mis estudiantes.</p>
+                            <p>Me encanta enseñar idiomas como herramienta de conexión cultural, porque valoro la
+                                calidad sobre la cantidad y adapto cada clase al ritmo de aprendizaje de mis
+                                estudiantes.</p>
                         </div>
 
                         <div class="col-md-6 d-flex align-items-center justify-content-center">
-                            <img src="assets/img/Gisela.jpg" alt="Gisela Galviz" class="img-fluid rounded shadow-sm" style="width: 250px; height: 250px; object-fit: cover; border: 5px solid rgba(255,255,255,0.2);">
+                            <img src="assets/img/Gisela.jpg" alt="Gisela Galviz" class="img-fluid rounded shadow-sm"
+                                style="width: 250px; height: 250px; object-fit: cover; border: 5px solid rgba(255,255,255,0.2);">
                         </div>
 
                         <div class="col-md-6">
@@ -111,21 +151,22 @@
                                 <li>Profesora de idiomas en academias privadas en Venezuela y Estados Unidos.</li>
                                 <li>Intérprete médico en NYC Health + Hospitals, New York.</li>
                                 <li>Intérprete judicial, District Attorney’s Office, New York.</li>
-                                <li>Profesora voluntaria en Mongolia, Peace Corps.</li>
+                                <li>Profesora voluntaria en Mongolia, Peace Corps, U.S.A.</li>
                             </ul>
                             <h5 class="mb-3"><strong>Idiomas</strong></h5>
-                                <ul>
-                                    <li><strong>Español e Inglés:</strong> Nivel nativo/avanzado</li>
-                                    <li><strong>Alemán:</strong> Nivel intermedio</li>
-                                </ul>
+                            <ul>
+                                <li><strong>Español e Inglés:</strong> Nivel nativo/avanzado</li>
+                                <li><strong>Alemán:</strong> Nivel intermedio</li>
+                            </ul>
                         </div>
 
                         <div class="col-md-6">
                             <h5><strong>Formación académica</strong></h5>
-                            <ul class="list-unstyled"> 
-                                                                <li class="mb-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-4">
                                     <div class="d-flex align-items-start">
-                                        <img src="assets/img/logosuny.svg" alt="Logo SUNY" width="35" height="35" class="me-2 mt-1" style="object-fit: contain;">
+                                        <img src="assets/img/logosuny.svg" alt="Logo SUNY" width="35" height="35"
+                                            class="me-2 mt-1" style="object-fit: contain;">
                                         <div>
                                             <strong>State University of New York (SUNY)</strong>
                                             <ul class="list-unstyled ms-3 small text-muted">
@@ -137,19 +178,22 @@
 
                                 <li class="mb-4">
                                     <div class="d-flex align-items-start">
-                                        <img src="assets/img/logoucv.svg" alt="Logo UCV" width="35" height="35" class="me-2 mt-1" style="object-fit: contain;">
+                                        <img src="assets/img/logoucv.svg" alt="Logo UCV" width="35" height="35"
+                                            class="me-2 mt-1" style="object-fit: contain;">
                                         <div>
                                             <strong>Universidad Central de Venezuela (U.C.V.)</strong>
                                             <ul class="list-unstyled ms-3 small text-muted">
                                                 <li>• Estudios en Idiomas Modernos</li>
-                                                <li>  (Español, Inglés y Alemán)</li>
+                                                <li> (Español, Inglés y Alemán)</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </li>
 
                                 <li class="mb-4">
-                                    <div class="d-flex align-items-start"> <img src="assets/img/logocuny.svg" alt="Logo CUNY" width="40" height="40" class="me-2 mt-1" style="object-fit: contain;">
+                                    <div class="d-flex align-items-start"> <img src="assets/img/logocuny.svg"
+                                            alt="Logo CUNY" width="40" height="40" class="me-2 mt-1"
+                                            style="object-fit: contain;">
                                         <div>
                                             <strong>College University of New York (CUNY)</strong>
                                             <ul class="list-unstyled ms-3 small text-muted">
@@ -158,12 +202,12 @@
                                         </div>
                                     </div>
                                 </li>
-                            </ul> 
+                            </ul>
                         </div>
 
                         <div class="col-md-6 mt-4">
                             <div class="p-4 rounded" style="background: rgba(255,255,255,0.15);">
-                                
+
                             </div>
                         </div>
                     </div>
@@ -273,21 +317,22 @@
     </section>
     -->
 
-<section id="faq" class="container mb-5">
+    <section id="faq" class="container mb-5">
         <div class="row">
             <div class="col-lg-12 mx-auto">
                 <div class="glass-card">
                     <h2 class="section-title text-center mb-5">Preguntas Frecuentes</h2>
-                    
+
                     <div class="row g-4 justify-content-center">
-                        
+
                         <div class="col-md-6 col-lg-4">
                             <div class="faq-card-vertical h-100">
                                 <div class="faq-icon-circle">
                                     <i class="fas fa-desktop"></i>
                                 </div>
                                 <h4 class="faq-question">1. ¿Qué tipo de equipo tecnológico necesito?</h4>
-                                <p class="faq-answer">Cámara web, micrófono y una conexión privada de internet sólida para poder comunicarnos adecuadamente y realizar prácticas fonéticas.</p>
+                                <p class="faq-answer">Cámara web, micrófono y una conexión privada de internet sólida
+                                    para poder comunicarnos adecuadamente y realizar prácticas fonéticas.</p>
                             </div>
                         </div>
 
@@ -297,31 +342,37 @@
                                     <i class="fas fa-money-bill-wave"></i>
                                 </div>
                                 <h4 class="faq-question">2. ¿Cuánto es el pago de los honorarios?</h4>
-                                <p class="faq-answer">Puedes realizar tu pago en dólares americanos (USD) o en euros (€):<br>
-                                - 2 clases de 60 min = USD/€ 100<br>
-                                - 6 clases de 60 min = USD/€ 280<br>
-                                - 10 clases de 60 min = USD/€ 460</p>
+                                <p class="faq-answer">Puedes realizar tu pago en dólares americanos (USD) o en euros
+                                    (€):<br>
+                                    - 2 clases de 60 min = USD/€ 100<br>
+                                    - 6 clases de 60 min = USD/€ 280<br>
+                                    - 10 clases de 60 min = USD/€ 460</p>
                             </div>
                         </div>
 
                         <div class="col-md-6 col-lg-4">
                             <div class="faq-card-vertical h-100">
                                 <div class="faq-icon-circle">
-                                    <i class="fa fa-credit-card-alt" aria-hidden="true"></i></div>
+                                    <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                                </div>
                                 <h4 class="faq-question">3. ¿Cuál método de pago puedo utilizar?</h4>
-                                
+
                                 <div class="faq-answer">
-                                    
-                                    
-                                    <a class="btn btn-custom btn-stripe d-flex align-items-center justify-content-center mb-3 mx-auto" href="https://buy.stripe.com/eVq7sM7ul43Og1l9qBawo00" style="max-width: 200px;">
-                                        <img src="assets/img/logostripe.svg" alt="Stripe" width="55" height="35" class="me-2"> Stripe
+
+
+                                    <a class="btn btn-custom btn-stripe d-flex align-items-center justify-content-center mb-3 mx-auto"
+                                        href="https://buy.stripe.com/eVq7sM7ul43Og1l9qBawo00" style="max-width: 200px;">
+                                        <img src="assets/img/logostripe.svg" alt="Stripe" width="55" height="35"
+                                            class="me-2"> Stripe
                                     </a>
-                                    
+
                                     <hr class="my-3" style="border-color: rgba(0,0,0,0.1);">
-                                    
+
                                     <span class="d-block mb-2 text-muted small">PayPal</span>
                                     <div class="d-flex justify-content-center">
-                                        <img src="assets/img/qrpaypal.jpg" alt="PayPal" class="img-fluid rounded border border-2 border-white shadow-sm" style="max-width: 150px;">
+                                        <img src="assets/img/qrpaypal.jpg" alt="PayPal"
+                                            class="img-fluid rounded border border-2 border-white shadow-sm"
+                                            style="max-width: 150px;">
                                     </div>
 
                                 </div>
@@ -334,7 +385,8 @@
                                     <i class="fas fa-clock"></i>
                                 </div>
                                 <h4 class="faq-question">4. ¿En cuánto tiempo podré hablar inglés?</h4>
-                                <p class="faq-answer">Depende de ti, ya que cada persona tiene un ritmo de aprendizaje diferente.</p>
+                                <p class="faq-answer">Depende de ti, ya que cada persona tiene un ritmo de aprendizaje
+                                    diferente.</p>
                             </div>
                         </div>
 
@@ -344,7 +396,8 @@
                                     <i class="fas fa-chart-line"></i>
                                 </div>
                                 <h4 class="faq-question">5. ¿Cómo puedo saber cual es mi nivel actual de inglés?</h4>
-                                <p class="faq-answer">Durante las dos primeras clases evaluaremos tu comprensión y uso del idioma de manera integral.</p>
+                                <p class="faq-answer">Durante las dos primeras clases evaluaremos tu comprensión y uso
+                                    del idioma de manera integral.</p>
                             </div>
                         </div>
 
@@ -354,7 +407,8 @@
                                     <i class="fas fa-globe"></i>
                                 </div>
                                 <h4 class="faq-question">6. ¿Por qué es tan importante poder hablar inglés?</h4>
-                                <p class="faq-answer">Te garantiza una transformación personal y abre grandes oportunidades en el ámbito profesional y de negocios.</p>
+                                <p class="faq-answer">Te garantiza una transformación personal y abre grandes
+                                    oportunidades en el ámbito profesional y de negocios.</p>
                             </div>
                         </div>
 
@@ -377,24 +431,40 @@
     <footer class="footer-glass text-center py-5 mt-5">
         <div class="container">
             <h3 class="fw-bold mb-3">VEN A APRENDER CONMIGO</h3>
-            <p class="mb-4">Contáctame para clases personalizadas de inglés o traducción. Estoy aquí para ayudarte a alcanzar tus metas lingüísticas y profesionales.</p>
-            
+            <p class="mb-4">Contáctame para clases personalizadas de inglés o traducción. Estoy aquí para ayudarte a
+                alcanzar tus metas lingüísticas y profesionales.</p>
+
             <p class="fw-bold mb-3">Sí, voy a comenzar 😁 ✅</p>
             <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+                <!-- Deshabilitado por el momento 
                 <a class="btn btn-custom d-flex align-items-center" href="#">
                     <img src="assets/img/logopp.png" alt="Paypal" width="65" height="45"> 
-                </a>  
+                </a>  -->
+                <a class="btn btn-custom btn-stripe d-flex align-items-center"
+                    href="https://buy.stripe.com/eVq7sM7ul43Og1l9qBawo00" style="max-width: 200px;">
+                    <img src="assets/img/logostripe.svg" alt="Stripe" width="55" height="35" class="me-2"> Stripe
+                </a>
                 <a class="btn btn-custom d-flex align-items-center" href="#">
                     <img src="assets/img/logodiscord.png" alt="Discord" width="45" height="45" class="me-2"> Discord
-                </a>  
+                </a>
                 <a class="btn btn-custom d-flex align-items-center" href="#">
-                    <img src="assets/img/logoinstagram.png" alt="Instagram" width="65" height="45"> 
+                    <img src="assets/img/logoinstagram.png" alt="Instagram" width="65" height="45">
                 </a>
             </div>
             <p class="text-muted small mb-0">Copyright &copy; GISELA GALVIZ MILLAN 2026</p>
         </div>
     </footer>
 
+    <!--Thanos Snap-->
+    <script src="jquery.min.js"></script>
+    <script src="html2canvas.min.js"></script>
+    <script src="thanos.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <!--Thanos Snap-->
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
